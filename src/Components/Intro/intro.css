@@ -1,0 +1,98 @@
+#intro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: calc(100vh - 5rem);
+  width: 100vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+
+.bg {
+  width: 35%;
+  max-height: 90vh;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.introContent {
+  width: 50%;
+  padding: 1rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hello {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.introName {
+  color: #92a8d1;
+}
+
+.introPara {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-top: 1rem;
+}
+
+.btn {
+  cursor: pointer;
+  background: white;
+  margin: 1rem 0;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  border: 2px solid #92a8d1;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.btnImg {
+  margin-right: 0.5rem;
+  height: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  #intro {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .bg {
+    width: 60%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .introContent {
+    width: 100%;
+    font-size: 5vw;
+    align-items: center;
+  }
+
+  .hello {
+    font-size: 1.2rem;
+  }
+
+  .introPara {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .btn {
+    justify-content: center;
+  }
+}
